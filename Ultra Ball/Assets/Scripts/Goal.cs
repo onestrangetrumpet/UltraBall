@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
-
+public class Goal : MonoBehaviour
 {
-    public AudioSource collectCoin;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +16,12 @@ public class Collectible : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        FindObjectOfType<GameManager>().CollectCoin();
-        Destroy(this.gameObject);
+        if (FindObjectOfType<GameManager>().CheckCoins()) 
+        {
+            Debug.Log("uhaJAFJDvjhwFHWEh");
+        }
+        
     }
-
 }
