@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;  
 
 public class PlayerControl : MonoBehaviour
 {
@@ -66,6 +67,12 @@ public class PlayerControl : MonoBehaviour
         }
 
         Camera.main.transform.position = transform.position + camOffset;
+
+        if(transform.position.y < -10)
+        {
+            int index = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(index);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
