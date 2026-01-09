@@ -10052,7 +10052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1559304354}
-  speed: 5
+  speed: 2.5
   jumpStrength: 15
 --- !u!1 &1612340852
 GameObject:
