@@ -5,7 +5,7 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 
 {
-    public AudioSource collectCoin;
+    public AudioSource CoinSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,7 @@ public class Collectible : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        CoinSound.Play();
         FindObjectOfType<GameManager>().CollectCoin();
         Destroy(this.gameObject);
     }
