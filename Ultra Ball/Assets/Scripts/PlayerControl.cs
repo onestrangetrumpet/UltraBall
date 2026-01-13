@@ -8,6 +8,7 @@ public class PlayerControl : MonoBehaviour
     public Rigidbody rb;
     public float speed;
     public float jumpStrength;
+    public AudioSource JumpSound;
     bool canJump = true;
     Vector3 camOffset;
 
@@ -62,6 +63,7 @@ public class PlayerControl : MonoBehaviour
     //
         if (Input.GetKeyDown("space") && canJump == true) 
         {
+            JumpSound.Play();
             rb.AddForce(0, jumpStrength, 0, ForceMode.Impulse);
             canJump = false;
         }
