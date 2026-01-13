@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -37,4 +38,19 @@ public class GameManager : MonoBehaviour
 
         return false;
     }
+
+    public void Levels()
+    {
+        SceneManager.LoadScene("Levels");
+    }
+    public void Play()
+    {
+        SceneManager.LoadScene("Level_01");
+    }
+    public void Settings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
 }
+
+
