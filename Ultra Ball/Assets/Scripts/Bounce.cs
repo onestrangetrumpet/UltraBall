@@ -1,11 +1,13 @@
+using System.IO;
 using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
     public Rigidbody rb;
+    public int power;
          
     void OnCollisionEnter(Collision collision)
     {
-        rb.AddForce(transform.up * 5);
+        rb.AddForce(transform.up * power);
     }
 }
