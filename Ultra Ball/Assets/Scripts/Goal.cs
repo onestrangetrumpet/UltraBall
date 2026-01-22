@@ -43,10 +43,7 @@ public class Goal : MonoBehaviour
         {
             Debug.Log("uhaJAFJDvjhwFHWEh");
             int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-            if (nextScene <= SceneManager.sceneCount)
-            {
-                SceneManager.LoadScene(nextScene);
-            }
+            SceneManager.LoadScene(nextScene);
         }
         
     }
