@@ -594,6 +594,7 @@ MonoBehaviour:
   coins: []
   coinsCollected: 0
   coinsText: {fileID: 752672458}
+  bgm: {fileID: 0}
 --- !u!1 &352250407
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +933,50 @@ RectTransform:
   m_AnchoredPosition: {x: -1543.2, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &988819390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 988819392}
+  - component: {fileID: 988819391}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &988819391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988819390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3888dd42efe0bf4da50b88b36a61fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &988819392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988819390}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 578.3747, y: 296.7038, z: -251.65442}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1015461844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1124,7 @@ GameObject:
   - component: {fileID: 1027975279}
   - component: {fileID: 1027975278}
   - component: {fileID: 1027975277}
+  - component: {fileID: 1027975281}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1174,6 +1220,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1027975281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027975276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d31f1f4ff7281e46b41e92c8c450ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMixer: {fileID: 24100000, guid: 0ea10324a008324439c2022a124dca7c, type: 2}
 --- !u!1 &1607123416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,3 +1853,4 @@ SceneRoots:
   - {fileID: 1027975280}
   - {fileID: 295398544}
   - {fileID: 352250409}
+  - {fileID: 988819392}
