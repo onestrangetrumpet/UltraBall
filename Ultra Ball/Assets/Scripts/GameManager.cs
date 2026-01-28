@@ -63,6 +63,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Settings");
     }
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
     IEnumerator LoadSettings()
     {   
