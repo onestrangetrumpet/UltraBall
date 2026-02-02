@@ -720,6 +720,7 @@ GameObject:
   - component: {fileID: 225350307}
   - component: {fileID: 225350311}
   - component: {fileID: 225350310}
+  - component: {fileID: 225350312}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -807,6 +808,22 @@ MonoBehaviour:
   musicSlider: {fileID: 222479325}
   SFXSlider: {fileID: 1111579268}
   masterSlider: {fileID: 788137569}
+--- !u!114 &225350312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225350306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c70a27db68e4864c913dd85e9d81efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: []
+  coinsCollected: 0
+  coinsText: {fileID: 0}
+  bgm: {fileID: 0}
 --- !u!1 &253722257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,9 +1085,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 225350310}
-        m_TargetAssemblyTypeName: SettingsPage, Assembly-CSharp
-        m_MethodName: toggleSound
+      - m_Target: {fileID: 225350312}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Levels
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3455,9 +3472,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 225350310}
-        m_TargetAssemblyTypeName: SettingsPage, Assembly-CSharp
-        m_MethodName: toggleSound
+      - m_Target: {fileID: 225350312}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3729,7 +3746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1862202066
 RectTransform:
   m_ObjectHideFlags: 0
