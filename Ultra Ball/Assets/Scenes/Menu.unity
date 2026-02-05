@@ -206,7 +206,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 295398545}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -588,13 +588,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 295398541}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c70a27db68e4864c913dd85e9d81efb, type: 3}
+  m_Script: {fileID: 11500000, guid: fc901e319e223544cb2dbbefeb2208cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: []
-  coinsCollected: 0
-  coinsText: {fileID: 752672458}
-  bgm: {fileID: 0}
 --- !u!1 &352250407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1659,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 295398545}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
         m_MethodName: Settings
         m_Mode: 1
         m_Arguments:
@@ -1796,7 +1792,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 295398545}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
         m_MethodName: Levels
         m_Mode: 1
         m_Arguments:
