@@ -50,24 +50,6 @@ public class GameManager : MonoBehaviour
 
         return false;
     }
-
-    public void Levels()
-    {
-        SceneManager.LoadScene("Levels");
-    }
-    public void Play()
-    {
-        SceneManager.LoadScene("Level_01");
-    }
-    public void Settings()
-    {
-        SceneManager.LoadScene("Settings");
-    }
-    public void Menu()
-    {
-        SceneManager.LoadScene("Menu");
-    }
-
     IEnumerator LoadSettings()
     {   
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Settings", LoadSceneMode.Additive);

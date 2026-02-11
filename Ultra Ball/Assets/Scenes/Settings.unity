@@ -720,6 +720,7 @@ GameObject:
   - component: {fileID: 225350307}
   - component: {fileID: 225350311}
   - component: {fileID: 225350310}
+  - component: {fileID: 225350312}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -807,6 +808,18 @@ MonoBehaviour:
   musicSlider: {fileID: 222479325}
   SFXSlider: {fileID: 1111579268}
   masterSlider: {fileID: 788137569}
+--- !u!114 &225350312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225350306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc901e319e223544cb2dbbefeb2208cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &253722257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,8 +1081,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 225350312}
+        m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
         m_MethodName: Levels
         m_Mode: 1
         m_Arguments:
@@ -3455,8 +3468,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 225350312}
+        m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
